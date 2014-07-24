@@ -135,7 +135,16 @@ abstract class BaseDatabase
         return $this->archivePath;
     }
 
-
+    /**
+     * Return temp path
+     *
+     * @return mixed
+     */
+    public function getBasePath()
+    {
+        return $this->basePath;
+    }
+    
     /**
      * @param string $kernelCacheDir
      *
